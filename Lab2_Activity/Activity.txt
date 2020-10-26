@@ -1,0 +1,7 @@
+1.b)	ActivityOne(onCreate(), onStart(), onResume(), onPause()) -> ActivityTwo(onCreate(), onStart(), onResume())
+	-> ActivityOne(onStop())
+c)	ActivityTwo(onPause()) -> ActivityOne(onRestart(), onStart(), onResume())
+	->ActivityTwo(onStop(), onDestroy())
+d)	ActivityOne(onPause()) -> ActivityTwo(onCreate(), onStart(), onResume())
+	->ActivityOne(onStop()) -> ActivityTwo(onPause(), onStop())
+e) 	ActivityTwo(onRestart(), onStart(), onResume())
